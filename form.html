@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML form</title>
+</head>
+<body>
+    <fieldset>
+        <legend>biodata</legend>
+    <form action="./response.html"  >
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password"><br><br>
+
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br><br>
+
+        <label for="hobb">Hobbies:</label>
+        <input type="checkbox" id="hobb" name="hobb" value="reading">
+        <label for="hobb">Reading</label>
+        <input type="checkbox" id="hobb" name="hobb" value="swimming">
+        <label for="hobb">Swimming</label>
+        <input type="checkbox" id="crick" name="crick" value="cricket">
+        <label for="crick">Cricket</label>
+        <br><br>
+
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="">Select a country</option>
+            <option value="usa">USA</option>
+            <option value="canada">Canada</option>
+            <option value="uk">UK</option>
+            <!-- Add more countries as needed -->
+        </select><br><br>
+        <label for="DOB">DOB:</label>
+        <input type="date" id="DOB" name="DOB"><br><br>
+        <label for="url"> enter your homepage:</label>
+        <input type="url" id="url" name="url" placeholder="Enter your website URL"><br><br>
+        
+        <label for="file">Upload your resume :</label>
+        <input type="file" id="file" name="file"><br><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset"><br><br>
+    </form>
+    </fieldset>
+</body>
+</html>
